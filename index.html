@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Birthday wish ✨</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- CREDIT -->
+  <div class="credit">Arijeet_07</div>
+
+  <!-- LOGIN PAGE -->
+  <div id="loginPage">
+
+    <div class="loginCard">
+
+      <h1>🌸 Birthday whish 🌸</h1>
+
+      <p>Enter DOB Password</p>
+
+      <input
+        type="text"
+        id="password"
+        placeholder="DDMMYYYY"
+        readonly
+      >
+
+      <div class="numberPad">
+
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+
+        <button onclick="clearInput()">🎂</button>
+        <button onclick="addNumber('0')">0</button>
+        <button onclick="backspace()">⌫</button>
+
+      </div>
+
+      <button class="openBtn" onclick="checkPassword()">
+        Open Surprise ✨
+      </button>
+
+      <p id="wrong"></p>
+
+    </div>
+
+  </div>
+
+  <!-- MAIN PAGE -->
+  <div id="mainPage">
+
+    <!-- FLOAT ITEMS -->
+    <div id="stars"></div>
+
+    <!-- BIRTHDAY TEXT -->
+    <div id="birthdayText" class="text">
+      <span>HAPPY</span>
+      <span>BIRTHDAY</span>
+      <div class="nameText">
+
+        <!--<span>
+        Ananyna ✨</span>-->
+
+    </div>
+    <div id="centerName">
+
+    
+
+</div>
+    </div>
+    <!-- CAKE -->
+    <div class="cakeContainer">
+
+      <!-- CANDLES -->
+      <div class="candles">
+
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+
+        <div class="candle">
+          <div class="flame"></div>
+        </div>
+
+      </div>
+
+      <!-- TOP -->
+      <div class="cake topCake">
+        <div class="cream"></div>
+        <div class="dots"></div>
+        <div class="texture"></div>
+      </div>
+
+      <!-- MIDDLE -->
+      <div class="cake middleCake">
+        <div class="cream"></div>
+        <div class="dots"></div>
+        <div class="texture"></div>
+      </div>
+
+      <!-- BOTTOM -->
+      <div class="cake bottomCake">
+        <div class="cream"></div>
+        <div class="dots"></div>
+        <div class="texture"></div>
+      </div>
+
+      <!-- STAND -->
+      <div class="cakeStand"></div>
+
+    </div>
+
+    <!-- BLOW BUTTON -->
+    <button id="blowBtn">
+      Tap To Blow 🌬️
+    </button>
+
+    <!-- PHOTOS -->
+    <div class="photos">
+
+      <div class="photoWrapper" id="photo1">
+        <img src="photo1.jpg" class="photo">
+      </div>
+
+      <div class="photoWrapper" id="photo2">
+        <img src="photo2.jpg" class="photo">
+      </div>
+
+      <div class="photoWrapper" id="photo3">
+        <img src="photo3.jpg" class="photo">
+      </div>
+
+      <div class="photoWrapper" id="photo4">
+        <img src="photo4.jpg" class="photo">
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- BUTTON TAP -->
+  <audio id="tapSound" src="tap.mp3"></audio>
+
+  <!-- CAKE DROP -->
+  <audio id="dropSound" src="drop.mp3"></audio>
+
+  <!-- BLOW -->
+  <audio id="blowSound" src="blow.mp3"></audio>
+
+  <!-- BACKGROUND MUSIC -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+  <!-- SOUND TOGGLE -->
+
+<button id="soundToggle">
+
+    🔊
+
+</button>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
